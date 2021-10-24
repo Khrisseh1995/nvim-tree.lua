@@ -146,20 +146,20 @@ function M.setup(opts)
   M.View.side = options.side
   M.View.width = options.width
   M.View.height = options.height
-  M.View.auto_resize = opts.auto_resize
-  M.View.winopts.relativenumber = opts.winopts.relativenumber
-  M.View.winopts.number = opts.winopts.number
-  W.View.winopts.list = opts.winopts.list
-  W.View.winopts.winfixwidth = opts.winopts.winfixwidth
-  W.View.winopts.winfixheight = opts.winopts.winfixheight
-  W.View.winopts.foldenable = opts.winopts.foldenable
-  W.View.winopts.spell = opts.winopts.spell
-  W.View.winopts.signcolumn = opts.winopts.signcolumn
-  W.View.winopts.foldmethod = opts.winopts.foldmethod
-  W.View.winopts.foldcolumn =opts.winopts.foldcolumn
-  W.View.winopts.cursorcolumn =  opts.winopts.cursorcolumn
-  W.View.winopts.colorcolumn = opts.winopts.colorcolumn
-  W.View.winopts.wrap = opts.winopts.wrap
+  M.View.auto_resize = options.auto_resize
+  M.View.winopts.relativenumber = options.winopts.relativenumber
+  M.View.winopts.number = options.winopts.number
+  W.View.winopts.list = options.winopts.list
+  W.View.winopts.winfixwidth = options.winopts.winfixwidth
+  W.View.winopts.winfixheight = options.winopts.winfixheight
+  W.View.winopts.foldenable = options.winopts.foldenable
+  W.View.winopts.spell = options.winopts.spell
+  W.View.winopts.signcolumn = options.winopts.signcolumn
+  W.View.winopts.foldmethod = options.winopts.foldmethod
+  W.View.winopts.foldcolumn = options.winopts.foldcolumn
+  W.View.winopts.cursorcolumn =  options.winopts.cursorcolumn
+  W.View.winopts.colorcolumn = options.winopts.colorcolumn
+  W.View.winopts.wrap = options.winopts.wrap
   if options.mappings.custom_only then
     M.View.mappings = options.mappings.list
   else
