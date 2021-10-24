@@ -149,7 +149,7 @@ function M.setup(opts)
   M.View.auto_resize = opts.auto_resize
   M.View.winopts.relativenumber = opts.winopts.relativenumber
   M.View.winopts.number = opts.winopts.number
-  W.View.winopts.list = opts.winopts.list,
+  W.View.winopts.list = opts.winopts.list
   W.View.winopts.winfixwidth = opts.winopts.winfixwidth
   W.View.winopts.winfixheight = opts.winopts.winfixheight
   W.View.winopts.foldenable = opts.winopts.foldenable
