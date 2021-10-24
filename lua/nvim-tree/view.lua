@@ -10,19 +10,6 @@ M.View = {
   bufnr = nil,
   tabpages = {},
   winopts = {
-    relativenumber = false,
-    number = false,
-    list = false,
-    winfixwidth = true,
-    winfixheight = true,
-    foldenable = false,
-    spell = false,
-    signcolumn = 'yes',
-    foldmethod = 'manual',
-    foldcolumn = '0',
-    cursorcolumn = false,
-    colorcolumn = '0',
-    wrap = false,
     winhl = table.concat({
       'EndOfBuffer:NvimTreeEndOfBuffer',
       'Normal:NvimTreeNormal',
@@ -113,6 +100,17 @@ local DEFAULT_CONFIG = {
   winopts = {
     number = false,
     relativenumber = false,
+    list = false,
+    winfixwidth = true,
+    winfixheight = true,
+    foldenable = false,
+    spell = false,
+    signcolumn = 'yes',
+    foldmethod = 'manual',
+    foldcolumn = '0',
+    cursorcolumn = false,
+    colorcolumn = '0',
+    wrap = false,
   },
   mappings = {
     custom_only = false,
@@ -149,8 +147,19 @@ function M.setup(opts)
   M.View.width = options.width
   M.View.height = options.height
   M.View.auto_resize = opts.auto_resize
-  M.View.winopts.number = opts.winopts.number
   M.View.winopts.relativenumber = opts.winopts.relativenumber
+  M.View.winopts.number = opts.winopts.number
+  W.View.winopts.list = opts.winopts.list,
+  W.View.winopts.winfixwidth = opts.winopts.winfixwidth
+  W.View.winopts.winfixheight = opts.winopts.winfixheight
+  W.View.winopts.foldenable = opts.winopts.foldenable
+  W.View.winopts.spell = opts.winopts.spell
+  W.View.winopts.signcolumn = opts.winopts.signcolumn
+  W.View.winopts.foldmethod = opts.winopts.foldmethod
+  W.View.winopts.foldcolumn =opts.winopts.foldcolumn
+  W.View.winopts.cursorcolumn =  opts.winopts.cursorcolumn
+  W.View.winopts.colorcolumn = opts.winopts.colorcolumn
+  W.View.winopts.wrap = opts.winopts.wrap
   if options.mappings.custom_only then
     M.View.mappings = options.mappings.list
   else
